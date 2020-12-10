@@ -21,7 +21,12 @@ class BirdbathNavbar extends React.Component {
 				<Nav className="mr-auto">
 					<Nav.Link as={Link} to="/about">About</Nav.Link>
 					<NavDropdown title="Emulators" id="basic-nav-dropdown">
-						<NavDropdown.Item href="#">Javatari</NavDropdown.Item>
+						{/* 
+							Javatari doesn't load properly if the DOM is modified without a refresh,
+							and I'm not clever enough (yet) to get it to work, so this will cause a
+							page reload.
+						*/}
+						<NavDropdown.Item href="/javatari">Javatari</NavDropdown.Item>
 						<NavDropdown.Item as={Link} to="/jsnes">JSNES</NavDropdown.Item>
 					</NavDropdown>
 				</Nav>
