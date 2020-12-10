@@ -1,0 +1,17 @@
+.white {
+    color: white;
+}
+
+.white a {
+    color: aqua;
+}
+
+.white a:hover {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.whitegaramond {
+    color: white;
+    font-family: "Apple Garamond", Garamond, serif;
+}
